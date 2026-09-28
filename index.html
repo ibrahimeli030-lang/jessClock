@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>World Clock</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>World Clock</h1>
+
+      <!-- City Selection -->
+      <select id="citySelect">
+        <option value="">Select a city..</option>
+        <option value="America/Los_Angeles">Los Angeles</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Africa/Lagos">Lagos</option>
+        <option value="America/New_York">New York</option>
+      </select>
+
+      <!-- Selected City -->
+      <div id="selectedCity"></div>
+
+      <!-- Three World Clocks -->
+      <div class="clock-list">
+        <!-- Los Angeles -->
+        <div class="clock">
+          <div>
+            <h2>Los Angeles</h2>
+            <p id="la-date"></p>
+          </div>
+
+          <div class="time" id="la-time"></div>
+        </div>
+
+        <!-- Paris -->
+        <div class="clock">
+          <div>
+            <h2>Paris</h2>
+            <p id="paris-date"></p>
+          </div>
+
+          <div class="time" id="paris-time"></div>
+        </div>
+
+        <!-- Tokyo -->
+        <div class="clock">
+          <div>
+            <h2>Tokyo</h2>
+            <p id="tokyo-date"></p>
+          </div>
+
+          <div class="time" id="tokyo-time"></div>
+        </div>
+      </div>
+
+      <!-- User's Current Location -->
+      <div class="my-location">
+        <h2>Your Local Time</h2>
+
+        <p id="local-location"></p>
+
+        <div class="local-time" id="local-time"></div>
+
+        <p id="local-date"></p>
+      </div>
+
+      <!-- Bonus: Homepage Link -->
+      <a href="index.html" id="homeLink">← Back to Home</a>
+
+      <footer>
+        This project was coded with <span>♥</span> by
+        <strong>Ojochide Ibrahim</strong>
+        and is
+        <a
+          href="https://ibrahimeli030-lang.github.io/jessClock/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          open sourced on GitHub
+        </a>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
